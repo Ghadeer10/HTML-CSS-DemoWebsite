@@ -1,0 +1,669 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(253, 253, 253);
+    height: 3000px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+/*---------------------------- nav bar ---------------------------------------*/
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(241, 234, 234);
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    opacity: 0.8;
+    z-index: 9;
+}
+
+.logo{
+    width: 100px;
+    height: 100%;
+    border-radius: 40px;
+    margin-left: 100px;
+    float: left;
+}
+.headerlist{
+    list-style: none;
+    margin-right: 100px;
+    line-height: 30px;
+}
+.headerlist li{
+    display: inline;
+    float: right;
+    margin-left: 30px;
+}
+#firstitem{
+    margin-left: -50px;
+}
+#home{
+    color: rgb(219, 19, 19);
+}
+.nav-line{
+    width: 45px;
+    height: 3px;
+    background-color: rgb(111, 19, 29);
+    float: right;
+    margin-top: 25px;
+}
+.headerlist a{
+    text-decoration: none;
+    color:black;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.headerlist a::after {
+    content: "";
+        width: 0;
+        height: 3px;
+        display: block;
+        background-color: rgb(111, 19, 29);
+        margin-top: -5px;
+        transition: 1s;
+}
+.headerlist a:hover::after{
+    width: 100%;
+}
+/*---------------------------     first section --------------------------------------*/
+
+.sec1-container{
+    background-image: url(../images/downloa.jfif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(87, 7, 7, 0.6);
+}
+.overlay div{
+    /* hero image code */
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.opening-phrase{
+    color: white;
+    font-size: 50px; 
+    margin: 0px;
+}
+.first-text{
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+.btn{
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+    width: 155px;
+    height: 55px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.btn1{
+    color: black;
+    background-color: rgb(251, 251, 251)
+}
+.btn2{
+    color: silver;
+    background-color: rgb(6, 5, 61)
+}
+.btn:hover{
+    opacity: 0.8;
+}
+/* ----------------------------------     second section             ---------------------------------- */
+.section2{
+    background-color: white;
+    height: 700px;
+}
+.sec-header{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+}
+.headerline{
+    width: 50px;
+    height: 4px;
+    background-color: rgb(135, 27, 27);
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 10px;
+
+}
+.grouped-div{
+    border: 1px solid black;
+    width: 30%;
+    height: 220px;
+    margin-bottom: 20px;
+    float: left;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    z-index: 0;
+}
+.middle-div{
+    margin: 0px 55px;
+}
+.grouped-div i, .grouped-div h3, .grouped-div p{
+    margin-bottom: 10px;
+}
+.grouped-div i{
+    font-size: 30px;
+    color: rgb(149, 20, 20);
+}
+.grouped-div h3{
+    font-size: 25px;
+}
+.grouped-div p{
+    color: rgb(174, 173, 173);
+    font-size: 20px;
+}
+.grouped-div a{
+    font-size: 18px;
+    text-decoration:none ;
+    color: rgb(149, 19, 19);
+}
+
+.grouped-div::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+}
+.grouped-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.6s;
+    z-index: -1;
+}
+.grouped-div:hover h3{
+    color: white;
+}
+/* //////////////////////////////          section3        //////////////////////////// */
+.section3 {
+    background-color: rgb(126, 105, 105);
+    height: 1200px;
+}
+.sec3div{
+    margin-top: 30px;
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+}
+.imgsec3{
+    width: 300px;
+    height: 350px;
+}
+.abovediv{
+    background-color: rgba(29, 32, 34,0);
+    width: 350px;
+    height: 400px;
+    /* Hero image */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.abovediv div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.abovediv div h3{
+    color: rgb(184, 46, 46);
+    font-size: 20px;
+    opacity: 0;
+    transition: top 1s ,opacity 0.5s;
+    font-weight: 900;
+}
+
+.abovediv div p{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.abovediv div i{
+    background-color: rgb(184, 46, 46);
+    color: black;
+    padding: 10px;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    transition-delay: 1s;
+}
+
+.sec3div:hover .abovediv{
+    background-color: rgba(29, 32, 34, 0.7);
+}
+
+.sec3div:hover .abovediv div h3{
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
+.sec3div:hover div p, .sec3div:hover div i{
+    transition-delay: 1s;
+    opacity: 1;
+}
+/* -------------------------------                sec4              ----------------------------- */
+#div4{
+    height: 200px;
+    padding: 30px 30px 20px 75px;
+    text-align: justify;
+}
+#div4 i{
+    position: absolute;
+        left: 20px;
+        top: 30px;
+        color: rgb(149, 19, 19);
+}
+/* ---------------                  section5  -------------------------- */
+.section5{
+    background-color:rgb(87, 87, 87);
+    height: 700px;
+}
+
+.section5 .container{
+    padding-top: 150px;
+}
+
+.sec5-img-div{
+    float: right;
+    margin-right: 60px;
+    text-align: center;
+    padding-left: 80px;
+}
+
+.sec5-img {
+    width: 450px;
+    height: 400px;
+}
+
+.sec5-img-div li{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    margin: 10px 5px;
+}
+.sec5-img-div li:first-child{
+    background-color: rgb(149, 19, 19);
+}
+.sec5-img-div li:hover{
+    background-color: rgb(149, 19, 19);
+}
+.sec5div{
+    margin-right: 40px;
+
+}
+.sec5-title{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+}
+
+.sec5-line {
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: rgb(111, 19, 29);
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.sec5-text{
+    color: rgb(134, 135, 135);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serifs
+}
+
+.sec5div p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(134, 135, 135);;
+}
+
+.sec5div p i{
+    color: rgb(111, 19, 29);
+}
+
+/* ----------------------------                section6             ---------------------- */
+.section6{
+    height: 400px;
+    background-image: url(../images/darkblue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+.section6 .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec6div{
+    float: left;
+    margin-right: 30px;
+    font-size: 22px;
+    padding-left: 100px;
+    color: white;
+    text-align: center;
+}
+.sec6div i {
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+}
+/* ----------------------------                section7             ---------------------- */
+.section7{
+    height: 700px;
+    overflow: auto;
+    background-color: #d8d8d8;
+}
+
+.sec7div{
+    border: 2px solid gray;
+    float: left;
+    width: 30%;
+    margin-left: 30px;
+    text-align: center;
+    position: relative;
+}
+.sec7div p, .sec7div h3{
+    font-size: 15px;
+    color: grey;
+    margin-top: 20px;
+}
+.pricecircle{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    margin: 25px auto;
+
+}
+.pricenum{
+    font-size: 40px;
+    color: black;
+    font-weight: 900;
+}
+
+.sec7-btn{
+    border: 2px solid blue;
+    text-align: center;
+    padding: 5px 16px;
+    margin: 18px 0px;
+}
+
+.sec7div::after{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: black;
+    opacity: 0;
+}
+
+.sec7div:hover::after{
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.6s;
+}
+
+.sec7div:hover .pricecircle, .sec7div:hover .pricenum, .sec7div:hover .divtitle{
+    color: red;
+}
+
+/* ----------------------------                section8             ---------------------- */  
+.section8{
+    height: 300px;
+    background-color: #6195ff;
+    background-image: url(../images/ll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sec8div{
+    width: 40%;
+    float: left;
+    padding: 100px 0px 10px 0px;
+    line-height: 35px;
+    margin: 0px 10px 20px 50px;
+}
+.sec8-begining{
+    overflow: auto;
+}
+.sec8-begining img{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;   
+}
+
+.sec8-begining h3{
+    color: white;
+    font-size: 20px;
+}
+
+.sec8-begining p{
+    color:rgb(210, 0, 0);
+    margin-top: -10px;
+    font-size: 17px;
+}
+
+.description{
+    color: beige;
+    margin-top: 10px;
+}
+/* ----------------------------                section9             ---------------------- */
+.section9 {
+    height: 800px;
+    background-color: #d7d7d7;
+    overflow: auto;
+}
+.team-content{
+    overflow: auto;
+}
+.team-item{
+    float: left;
+    width: 30%;
+    padding: 17px 12px;
+    text-align: center;
+    position: relative;
+}
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(98, 19, 19, 0.3);
+    opacity: 0;
+    visibility: hidden;
+}
+.team-item:hover .team-overlay{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 18, 18);
+    margin-left: auto;
+    color: white; 
+}
+.mg{
+    margin: 0px 5%;
+}
+.team-img img{
+    width: 100%;
+    height: 100%;
+}
+.team-overlay a i{
+    line-height: 40px;
+}
+.team-info-title{
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+.team-info-text{
+    color: rgb(156, 0, 0) ;
+    font-size: 16px;
+}
+.team-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+}
+.team-item:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+/* ----------------------------                section10             ---------------------- */
+.news-content{
+    background-color: rgb(71, 0, 0);
+    overflow: auto;
+}
+.news-item{
+    float: left;
+    width: 30%;
+    background-color: rgb(219, 215, 215);
+    padding: 0px 20px 30px 20px;
+    position: relative;
+}
+
+.news-item img{
+    width: 100%;
+    height: 500px;
+}
+
+.news-item-info{
+    margin-bottom: 20px;
+}
+.news-item div{
+    font-size: 12px;
+}
+.news-item-info span{
+    color: rgb(168, 149, 149);
+    margin-right: 20px;
+}
+.news-item-info i{
+    color: rgb(149, 19, 19);
+}
+
+.news-item p{
+    color: rgb(168, 149, 149);
+    font-size: 17px;
+    line-height: 30px;
+}
+.news-item a {
+    text-decoration: none;
+    color: rgb(149, 19, 19);
+    font-weight: 300;
+}
+.news-item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(122, 79, 79);
+    opacity: 0;
+}
+
+.news-item:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    transition: 1s;
+}
+/* ----------------------------                section11             ---------------------- */
+.section11{
+    height: 300px;
+    background-color: rgb(88, 88, 88);
+    text-align: center;
+    padding-top: 50px;    
+}
+.section11 img{
+    width: 200px;
+    height: 100px;
+}
+.sec11-icons{
+    margin: 10px 0px;
+}
+.sec11-icons li{
+    display: inline-block;
+    color:white;
+    background-color: rgb(149, 19, 19);
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    border-radius: 50%;
+}
+.section11 span{
+    font-size: 13px;
+    color: gray;
+    
+}
+
+.sec11-icons li:hover{
+    background-color: rgb(81, 1, 1);
+}
